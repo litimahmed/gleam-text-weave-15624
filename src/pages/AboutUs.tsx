@@ -4,8 +4,11 @@ import Footer from "@/components/Footer";
 import { ArrowLeft, Target, Eye, Award, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/contexts/TranslationContext";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -14,8 +17,8 @@ const AboutUs = () => {
         <div className="max-w-4xl mx-auto">
           <Link to="/">
             <Button variant="ghost" className="mb-8">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
+              <ArrowLeft className="w-4 h-4 ltr:mr-2 rtl:ml-2" />
+              {t('aboutPage.backToHome')}
             </Button>
           </Link>
 
@@ -25,16 +28,13 @@ const AboutUs = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              About Toorrii
+              {t('aboutPage.title')}
             </h1>
             
             <div className="space-y-12">
               <section>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Toorrii is Algeria's leading queue management and appointment scheduling platform, 
-                  dedicated to transforming how public services, healthcare facilities, and businesses 
-                  serve their communities. We combine innovative technology with deep understanding of 
-                  local needs to create efficient, accessible solutions.
+                  {t('aboutPage.intro')}
                 </p>
               </section>
 
@@ -44,12 +44,9 @@ const AboutUs = () => {
                     <Target className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-semibold mb-3">Our Mission</h2>
+                    <h2 className="text-2xl font-semibold mb-3">{t('aboutPage.missionTitle')}</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      To eliminate waiting times and improve service delivery across Algeria by providing 
-                      intelligent, user-friendly queue management solutions. We believe everyone deserves 
-                      efficient access to essential services without the frustration of long queues and 
-                      uncertain wait times.
+                      {t('aboutPage.missionText')}
                     </p>
                   </div>
                 </div>
@@ -61,12 +58,9 @@ const AboutUs = () => {
                     <Eye className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-semibold mb-3">Our Vision</h2>
+                    <h2 className="text-2xl font-semibold mb-3">{t('aboutPage.visionTitle')}</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      To become the cornerstone of digital transformation in service delivery across North 
-                      Africa, setting new standards for efficiency, accessibility, and customer satisfaction. 
-                      We envision a future where waiting in line is a thing of the past, and every interaction 
-                      with services is seamless and dignified.
+                      {t('aboutPage.visionText')}
                     </p>
                   </div>
                 </div>
@@ -78,34 +72,30 @@ const AboutUs = () => {
                     <Award className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-semibold mb-3">Our Values</h2>
+                    <h2 className="text-2xl font-semibold mb-3">{t('aboutPage.valuesTitle')}</h2>
                     <div className="space-y-4 text-muted-foreground">
                       <div>
-                        <h3 className="font-semibold text-foreground mb-2">Innovation</h3>
+                        <h3 className="font-semibold text-foreground mb-2">{t('aboutPage.innovationTitle')}</h3>
                         <p className="leading-relaxed">
-                          We continuously evolve our technology to meet the changing needs of Algerian 
-                          institutions and their customers, staying at the forefront of digital service delivery.
+                          {t('aboutPage.innovationText')}
                         </p>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground mb-2">Accessibility</h3>
+                        <h3 className="font-semibold text-foreground mb-2">{t('aboutPage.accessibilityTitle')}</h3>
                         <p className="leading-relaxed">
-                          Our platform is designed to be intuitive and accessible to all users, regardless 
-                          of their technical expertise, ensuring no one is left behind in the digital transition.
+                          {t('aboutPage.accessibilityText')}
                         </p>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground mb-2">Reliability</h3>
+                        <h3 className="font-semibold text-foreground mb-2">{t('aboutPage.reliabilityTitle')}</h3>
                         <p className="leading-relaxed">
-                          We build robust, secure systems that organizations can depend on for their daily 
-                          operations, maintaining the highest standards of uptime and data protection.
+                          {t('aboutPage.reliabilityText')}
                         </p>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-foreground mb-2">Local Expertise</h3>
+                        <h3 className="font-semibold text-foreground mb-2">{t('aboutPage.localExpertiseTitle')}</h3>
                         <p className="leading-relaxed">
-                          Understanding the unique challenges and requirements of the Algerian market, we 
-                          tailor our solutions to meet local needs while maintaining global best practices.
+                          {t('aboutPage.localExpertiseText')}
                         </p>
                       </div>
                     </div>
@@ -119,56 +109,49 @@ const AboutUs = () => {
                     <Users className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-semibold mb-3">Who We Serve</h2>
+                    <h2 className="text-2xl font-semibold mb-3">{t('aboutPage.whoWeServeTitle')}</h2>
                     <p className="text-muted-foreground leading-relaxed mb-4">
-                      Toorrii partners with a diverse range of institutions across Algeria to modernize 
-                      their service delivery:
+                      {t('aboutPage.whoWeServeText')}
                     </p>
-                    <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
-                      <li>Government agencies and public services</li>
-                      <li>Healthcare facilities and medical centers</li>
-                      <li>Banks and financial institutions</li>
-                      <li>Telecommunications providers</li>
-                      <li>Educational institutions</li>
-                      <li>Retail and commercial establishments</li>
+                    <ul className="list-disc list-inside space-y-2 text-muted-foreground ltr:ml-4 rtl:mr-4">
+                      <li>{t('aboutPage.service1')}</li>
+                      <li>{t('aboutPage.service2')}</li>
+                      <li>{t('aboutPage.service3')}</li>
+                      <li>{t('aboutPage.service4')}</li>
+                      <li>{t('aboutPage.service5')}</li>
+                      <li>{t('aboutPage.service6')}</li>
                     </ul>
                   </div>
                 </div>
               </section>
 
               <section className="pt-8 border-t border-border">
-                <h2 className="text-2xl font-semibold mb-4">Why Choose Toorrii?</h2>
+                <h2 className="text-2xl font-semibold mb-4">{t('aboutPage.whyChooseTitle')}</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p className="leading-relaxed">
-                    <span className="font-semibold text-foreground">Proven Track Record:</span> Trusted by 
-                    leading Algerian institutions including major banks, telecommunications companies, and 
-                    public services.
+                    <span className="font-semibold text-foreground">{t('aboutPage.provenTrackLabel')}</span> {t('aboutPage.provenTrackText')}
                   </p>
                   <p className="leading-relaxed">
-                    <span className="font-semibold text-foreground">Local Support:</span> Dedicated customer 
-                    support team based in Algeria, understanding your language, culture, and business needs.
+                    <span className="font-semibold text-foreground">{t('aboutPage.localSupportLabel')}</span> {t('aboutPage.localSupportText')}
                   </p>
                   <p className="leading-relaxed">
-                    <span className="font-semibold text-foreground">Compliance:</span> Full compliance with 
-                    Algerian regulations including Law No. 18-07 on data protection and ANPDP requirements.
+                    <span className="font-semibold text-foreground">{t('aboutPage.complianceLabel')}</span> {t('aboutPage.complianceText')}
                   </p>
                   <p className="leading-relaxed">
-                    <span className="font-semibold text-foreground">Scalability:</span> Solutions that grow 
-                    with your organization, from single locations to nationwide networks.
+                    <span className="font-semibold text-foreground">{t('aboutPage.scalabilityLabel')}</span> {t('aboutPage.scalabilityText')}
                   </p>
                 </div>
               </section>
 
               <section className="pt-8 border-t border-border">
-                <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
+                <h2 className="text-2xl font-semibold mb-4">{t('aboutPage.getInTouchTitle')}</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Ready to transform your service delivery? Contact us to learn more about how Toorrii 
-                  can help your organization.
+                  {t('aboutPage.getInTouchText')}
                 </p>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>Email: contact@toorrii.com</p>
-                  <p>Phone: +213 (0) XX XX XX XX</p>
-                  <p>Address: [Company Address], Algeria</p>
+                  <p>{t('aboutPage.email')}</p>
+                  <p>{t('aboutPage.phone')}</p>
+                  <p>{t('aboutPage.address')}</p>
                 </div>
               </section>
             </div>
