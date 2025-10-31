@@ -15,7 +15,7 @@ const FloatingBlob = () => {
       <div
         className="absolute w-96 h-96 rounded-full opacity-30 blur-3xl animate-blob"
         style={{
-          background: '#578fea',
+          background: 'hsl(88, 65%, 42%)',
           top: `${20 + scrollY * 0.1}%`,
           right: `${10 + Math.sin(scrollY * 0.01) * 5}%`,
           transform: `translateY(${Math.sin(scrollY * 0.005) * 50}px)`,
@@ -26,7 +26,7 @@ const FloatingBlob = () => {
       <div
         className="absolute w-64 h-64 rounded-full opacity-20 blur-2xl animate-float"
         style={{
-          background: '#578fea',
+          background: 'hsl(88, 65%, 42%)',
           top: `${60 + scrollY * 0.05}%`,
           left: `${5 + Math.cos(scrollY * 0.008) * 3}%`,
           transform: `translateY(${Math.cos(scrollY * 0.003) * 30}px)`,
@@ -38,7 +38,7 @@ const FloatingBlob = () => {
       <div
         className="absolute w-32 h-32 rounded-full opacity-25 blur-xl animate-blob"
         style={{
-          background: '#578fea',
+          background: 'hsl(88, 65%, 42%)',
           top: `${40 + scrollY * 0.08}%`,
           left: `${80 + Math.sin(scrollY * 0.012) * 4}%`,
           transform: `translateY(${Math.sin(scrollY * 0.007) * 40}px)`,
