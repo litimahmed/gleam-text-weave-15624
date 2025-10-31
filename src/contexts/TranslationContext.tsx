@@ -70,6 +70,18 @@ const translations: Translations = {
   'contact.getStartedDesc': { en: 'Contact us today to learn more about how our queue management system can benefit your business.', fr: 'Contactez-nous dès aujourd\'hui pour en savoir plus sur la façon dont notre système de gestion des files d\'attente peut bénéficier à votre entreprise.', ar: 'اتصل بنا اليوم لمعرفة المزيد حول كيف يمكن لنظام إدارة الطوابير لدينا أن يفيد عملك.' },
   'contact.sendMessage': { en: 'Send Us a Message', fr: 'Envoyez-nous un message', ar: 'أرسل لنا رسالة' },
   
+  // Contact Page
+  'contactPage.name': { en: 'Name', fr: 'Nom', ar: 'الاسم' },
+  'contactPage.namePlaceholder': { en: 'Your name', fr: 'Votre nom', ar: 'اسمك' },
+  'contactPage.email': { en: 'Email', fr: 'Email', ar: 'البريد الإلكتروني' },
+  'contactPage.emailPlaceholder': { en: 'your.email@example.com', fr: 'votre.email@exemple.com', ar: 'بريدك@مثال.com' },
+  'contactPage.subject': { en: 'Subject', fr: 'Objet', ar: 'الموضوع' },
+  'contactPage.subjectPlaceholder': { en: 'How can we help you?', fr: 'Comment pouvons-nous vous aider ?', ar: 'كيف يمكننا مساعدتك؟' },
+  'contactPage.message': { en: 'Message', fr: 'Message', ar: 'الرسالة' },
+  'contactPage.messagePlaceholder': { en: 'Tell us more about your inquiry...', fr: 'Parlez-nous de votre demande...', ar: 'أخبرنا المزيد عن استفسارك...' },
+  'contactPage.submit': { en: 'Send Message', fr: 'Envoyer le message', ar: 'إرسال الرسالة' },
+  'contactPage.successMessage': { en: 'Message sent successfully! We\'ll get back to you soon.', fr: 'Message envoyé avec succès ! Nous vous répondrons bientôt.', ar: 'تم إرسال الرسالة بنجاح! سنرد عليك قريباً.' },
+  
   // Features
   'features.title': { en: 'Everything You Need to Manage Queues Efficiently', fr: 'Tout ce dont vous avez besoin pour gérer efficacement les files d\'attente', ar: 'كل ما تحتاجه لإدارة الطوابير بكفاءة' },
   'features.subtitle': { en: 'Powerful features designed to streamline your operations and delight your customers', fr: 'Des fonctionnalités puissantes conçues pour rationaliser vos opérations et ravir vos clients', ar: 'ميزات قوية مصممة لتبسيط عملياتك وإسعاد عملائك' },

@@ -19,7 +19,7 @@ const Header = () => {
     { name: t('nav.partnerships'), href: '/#partnerships' },
     { name: t('nav.aboutUs'), href: '/about-us' },
     { name: t('nav.privacy'), href: '/privacy-policy' },
-    { name: t('nav.contact'), href: '/#contact' }
+    { name: t('nav.contact'), href: '/contact' }
   ];
 
   return (
