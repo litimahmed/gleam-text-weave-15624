@@ -8,48 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 188 94% 20%;
+    --background: 0 0% 99%;
+    --foreground: 182 86% 14%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 188 94% 20%;
+    --card: 0 0% 99%;
+    --card-foreground: 182 86% 14%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 188 94% 20%;
+    --popover: 0 0% 99%;
+    --popover-foreground: 182 86% 14%;
 
-    --primary: 188 94% 20%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 188 80% 35%;
-    --primary-dark: 188 94% 15%;
+    --primary: 182 86% 14%;
+    --primary-foreground: 0 0% 99%;
+    --primary-light: 176 28% 35%;
+    --primary-dark: 182 90% 10%;
 
-    --secondary: 215 25% 27%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 176 28% 35%;
+    --secondary-foreground: 0 0% 99%;
 
-    --muted: 162 30% 92%;
-    --muted-foreground: 188 40% 40%;
+    --muted: 155 27% 85%;
+    --muted-foreground: 182 40% 30%;
 
-    --accent: 142 76% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 174 19% 57%;
+    --accent-foreground: 182 86% 14%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 99%;
 
-    --success: 142 76% 55%;
-    --success-foreground: 0 0% 100%;
+    --success: 174 19% 57%;
+    --success-foreground: 182 86% 14%;
 
-    --border: 162 20% 85%;
-    --input: 162 20% 90%;
-    --ring: 188 94% 20%;
+    --border: 155 27% 85%;
+    --input: 155 20% 90%;
+    --ring: 182 86% 14%;
 
     /* Custom brand gradients - Professional teal gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(188, 94%, 20%), hsl(188, 94%, 15%));
-    --gradient-hero: linear-gradient(135deg, hsl(188, 80%, 35%) 0%, hsl(188, 94%, 20%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(162, 30%, 96%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(182, 86%, 14%), hsl(182, 90%, 10%));
+    --gradient-hero: linear-gradient(135deg, hsl(176, 28%, 35%) 0%, hsl(182, 86%, 14%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 99%) 0%, hsl(155, 27%, 90%) 100%);
     
     /* Shadows */
-    --shadow-elegant: 0 10px 40px -10px hsl(188 94% 20% / 0.20);
-    --shadow-glow: 0 0 60px hsl(142 76% 55% / 0.25);
-    --shadow-card: 0 4px 20px hsl(188 94% 20% / 0.10);
+    --shadow-elegant: 0 10px 40px -10px hsl(182 86% 14% / 0.20);
+    --shadow-glow: 0 0 60px hsl(174 19% 57% / 0.20);
+    --shadow-card: 0 4px 20px hsl(182 86% 14% / 0.10);
 
     --radius: 0.5rem;
 

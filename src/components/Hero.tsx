@@ -32,9 +32,8 @@ const Hero = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.3
-          }} className="text-4xl lg:text-5xl font-bold leading-tight">
-              <span className="text-primary">Smart</span>{" "}
-              {t("hero.title").split("Smart ")[1] || t("hero.title").split("intelligente ")[1] || t("hero.title")}
+          }} className="text-4xl lg:text-6xl font-bold leading-tight text-foreground">
+              {t("hero.title")}
             </motion.h1>
 
             <motion.p initial={{
@@ -59,8 +58,8 @@ const Hero = () => {
           }} transition={{
             duration: 0.6,
             delay: 0.7
-          }}>
-              <Button variant="hero" size="xl" className="group shadow-glow">
+          }} className="flex gap-4 rtl:flex-row-reverse">
+              <Button variant="hero" size="xl" className="group shadow-elegant">
                 {t("hero.cta")}
                 <motion.div className={`${t("hero.cta").length > 20 ? 'mr-2 rtl:ml-2 rtl:mr-0' : 'ml-2 rtl:mr-2 rtl:ml-0'}`} animate={{
                 x: [0, 5, 0]
@@ -70,6 +69,9 @@ const Hero = () => {
               }}>
                   <ArrowRight className="w-5 h-5" />
                 </motion.div>
+              </Button>
+              <Button variant="outline" size="xl" className="group">
+                {t("hero.demo")}
               </Button>
             </motion.div>
 
@@ -103,7 +105,7 @@ const Hero = () => {
               </div>
               <div className="flex flex-col items-start space-y-1">
                 <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                  <Clock className="w-5 h-5 text-success" />
+                  <Clock className="w-5 h-5 text-primary" />
                   <span className="text-2xl font-bold text-foreground">45min</span>
                 </div>
                 <span className="text-xs text-muted-foreground">

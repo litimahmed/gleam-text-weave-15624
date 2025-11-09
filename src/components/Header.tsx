@@ -77,7 +77,7 @@ const Header = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <LanguageToggle />
-            <Button variant="secondary" size="lg" className="hidden sm:inline-flex gap-2 font-semibold">
+            <Button variant="outline" size="lg" className="hidden sm:inline-flex gap-2 font-semibold">
               <Users className="w-4 h-4" />
               {t('nav.clientPortal')}
             </Button>
@@ -90,7 +90,7 @@ const Header = () => {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="lg:hidden">
                 <Button variant="ghost" size="icon">
-                  <Menu className="h-5 w-5" />
+                  <Menu className="h-5 w-5 text-primary" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
@@ -106,7 +106,7 @@ const Header = () => {
                     </Link>
                   ))}
                   <div className="pt-6 border-t border-border space-y-4">
-                    <Button variant="secondary" className="w-full justify-start gap-2 font-semibold">
+                    <Button variant="outline" className="w-full justify-start gap-2 font-semibold">
                       <Users className="w-4 h-4" />
                       {t('nav.clientPortal')}
                     </Button>

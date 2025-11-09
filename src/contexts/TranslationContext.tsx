@@ -18,9 +18,10 @@ const translations: Translations = {
   'nav.signin': { en: 'Professional Access', fr: 'Accès Professionnel', ar: 'دخول المحترفين' },
   
   // Hero
-  'hero.title': { en: 'Smart Queue Management', fr: 'Gestion intelligente des files', ar: 'إدارة ذكية للطوابير' },
-  'hero.subtitle': { en: 'Transform your customer experience with intelligent appointment scheduling, real-time queue management, and seamless digital workflows.', fr: 'Transformez l\'expérience client avec la planification intelligente de rendez-vous, la gestion en temps réel des files d\'attente et des flux numériques fluides.', ar: 'قم بتحويل تجربة عملائك من خلال جدولة المواعيد الذكية وإدارة الطوابير في الوقت الفعلي وسير العمل الرقمي السلس.' },
-  'hero.cta': { en: 'Get Started Free', fr: 'Commencer gratuitement', ar: 'ابدأ مجاناً' },
+  'hero.title': { en: 'Enterprise Queue Management Solutions', fr: 'Solutions professionnelles de gestion des files d\'attente', ar: 'حلول إدارة الطوابير للمؤسسات' },
+  'hero.subtitle': { en: 'Streamline operations with intelligent appointment scheduling, real-time queue analytics, and seamless digital workflows designed for modern enterprises.', fr: 'Optimisez vos opérations avec la planification intelligente de rendez-vous, l\'analyse en temps réel des files d\'attente et des flux numériques fluides conçus pour les entreprises modernes.', ar: 'تبسيط العمليات من خلال جدولة المواعيد الذكية وتحليلات الطوابير في الوقت الفعلي وسير العمل الرقمي السلس المصمم للمؤسسات الحديثة.' },
+  'hero.cta': { en: 'Start Free Trial', fr: 'Démarrer l\'essai gratuit', ar: 'ابدأ التجربة المجانية' },
+  'hero.demo': { en: 'Watch Demo', fr: 'Voir la démo', ar: 'شاهد العرض التوضيحي' },
   'hero.trusted': { en: 'Trusted by 25,000+ businesses worldwide', fr: 'Plus de 25 000 entreprises nous font confiance', ar: 'موثوق به من قبل أكثر من 25,000 شركة عالمياً' },
   'hero.stat1': { en: 'Active Users', fr: 'Utilisateurs actifs', ar: 'مستخدم نشط' },
   'hero.stat2': { en: 'Daily Appointments', fr: 'Rendez-vous quotidiens', ar: 'موعد يومي' },
