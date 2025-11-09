@@ -107,7 +107,7 @@ export default {
 				},
 				'glow': {
 					'0%, 100%': { boxShadow: 'var(--shadow-glow)' },
-					'50%': { boxShadow: '0 0 80px hsl(217 78% 63% / 0.4)' }
+					'50%': { boxShadow: '0 0 80px hsl(142 76% 55% / 0.4)' }
 				},
 				'float': {
 					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
