@@ -1,53 +1,61 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "@/contexts/TranslationContext";
+import AirAlgerieLogo from "@/assets/Air_Algérie_logo.png";
+import BankOfAlgeriaLogo from "@/assets/Bank_of_Algeria.png";
+import DjezzyLogo from "@/assets/Djezzy_Logo.png";
+import SonatrachLogo from "@/assets/Flag_of_Sonatrach.png";
+import MobilisLogo from "@/assets/Logo_Mobilis.png";
+import OoredooLogo from "@/assets/Ooredoo_logo.svg";
+import SonelgazLogo from "@/assets/Sonlgaz.png";
+import CNASLogo from "@/assets/cnas.png";
 
 const partnerships = [
   {
     id: 1,
     name: "Air Algérie",
-    logo: "/src/assets/Air_Algérie_logo.png",
+    logo: AirAlgerieLogo,
     description: "National airline partnership"
   },
   {
     id: 2,
     name: "Bank of Algeria",
-    logo: "/src/assets/Bank_of_Algeria.png",
+    logo: BankOfAlgeriaLogo,
     description: "Banking sector collaboration"
   },
   {
     id: 3,
     name: "Djezzy",
-    logo: "/src/assets/Djezzy_Logo.png",
+    logo: DjezzyLogo,
     description: "Telecommunications partner"
   },
   {
     id: 4,
     name: "Sonatrach",
-    logo: "/src/assets/Flag_of_Sonatrach.png",
+    logo: SonatrachLogo,
     description: "Energy sector partnership"
   },
   {
     id: 5,
     name: "Mobilis",
-    logo: "/src/assets/Logo_Mobilis.png",
+    logo: MobilisLogo,
     description: "Mobile network operator"
   },
   {
     id: 6,
     name: "Ooredoo",
-    logo: "/src/assets/Ooredoo_logo.svg",
+    logo: OoredooLogo,
     description: "Telecommunications partner"
   },
   {
     id: 7,
     name: "Sonelgaz",
-    logo: "/src/assets/Sonlgaz.png",
+    logo: SonelgazLogo,
     description: "Electricity and gas provider"
   },
   {
     id: 8,
     name: "CNAS",
-    logo: "/src/assets/cnas.png",
+    logo: CNASLogo,
     description: "Social security partner"
   }
 ];

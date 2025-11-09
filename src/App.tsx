@@ -8,14 +8,11 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import AboutUs from "./pages/AboutUs";
 import ContactUsPage from "./pages/ContactUs";
-import FloatingBlob from "./components/FloatingBlob";
-
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <FloatingBlob />
       <Toaster />
       <Sonner />
       <Routes>
